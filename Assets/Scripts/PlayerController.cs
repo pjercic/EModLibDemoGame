@@ -47,13 +47,13 @@ public class PlayerController : MonoBehaviour
         double valence = EModLibWrapper.getValenceEx(mPersonId);
         //rend.material.shader = Shader.Find("_Color");
         
-        if (valence > 0.1)
+        if (valence > 0.01)
         {
             
             //rend.material.SetColor("_Color", Color.blue);
             mMaterial.color = new Color(0.0f, 0.0f, 1.0f);
         }
-        else if (valence < -0.1)
+        else if (valence < -0.01)
         {
            
             //rend.material.SetColor("_Color", Color.red);
